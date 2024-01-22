@@ -1,0 +1,12 @@
+.cardx {
+      width: 18rem;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0 2px 2px rgba(196, 66, 66, 0.1)!important; 
+      cursor: pointer;
+}
+
+.cardx:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

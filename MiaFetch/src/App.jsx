@@ -1,14 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import FetchCard from './assets/components/Fetch'
+import "bootstrap/dist/css/bootstrap.min.css";
+import FetchCard from "./assets/components/Fetch";
+import NavBarReal from "./assets/components/NavBar";
 
 function App() {
-
   return (
     <>
-       <FetchCard></FetchCard>
+      <NavBarReal></NavBarReal>
+      <FetchCard />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

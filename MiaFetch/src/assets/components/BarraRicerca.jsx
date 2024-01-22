@@ -1,17 +1,15 @@
 import React from "react";
-import { FormGroup } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const BarraRicerca = ({ ricerca, onRicercaChange }) => {
   return (
     <>
       <Navbar >
-        <Container fluid>
-          <Navbar.Brand href="#">Test Api</Navbar.Brand>
+        <Container>
+          <Navbar.Brand className="border border-5 rounded-1  px-3 py-2">Test Api</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
            
@@ -23,7 +21,7 @@ const BarraRicerca = ({ ricerca, onRicercaChange }) => {
                 onChange={(e) => onRicercaChange(e.target.value)}
               />
               
-            <Button variant="outline-danger mx-2">Search</Button>
+            <Button variant="outline-dark mx-2">Search</Button>
            
             </Form>
             

@@ -51,14 +51,21 @@ function FetchCard() {
   
   return (
     <>
-      <Container>
+      <Container className="cont d-flex justify-content-center"> 
+        
+    
         <BarraRicerca 
         ricerca={ricerca}
         onRicercaChange={handleRicercaChange}
         />
-        <Row>
-          {filtraDati().map((dato) => (
-            <SingleCard
+        <Row className="row">
+          
+        </Row>
+       
+      </Container>
+      <Container className="d-flex flex-wrap">
+      {filtraDati().map((dato) => (
+            <SingleCard 
             thumbnailUrl={dato.thumbnailUrl}
               dato={dato}
               key={dato.id}
@@ -66,7 +73,6 @@ function FetchCard() {
               onElimina={() => gestisciEliminazione(dato.id)}
             />
           ))}
-        </Row>
       </Container>
     </>
   );
